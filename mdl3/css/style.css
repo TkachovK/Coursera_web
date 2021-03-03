@@ -94,8 +94,53 @@ body {
     margin-right: 5px;
   }
 
-  @media (min-width: 1200px) {
 
+  .jumbotron {
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+  @media (min-width: 1200px) {
+    .jumbotron {
+      background: url('../images/jumbotron_1200.jpg') no-repeat;
+      height: 675px;
+    }
 }
 
 /********** Medium devices only **********/
@@ -110,21 +155,30 @@ body {
     height: 100px;
     margin: 5px 5px 5px 0;
   }
-  /* End Header */
+
+  .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
     #logo-img {
         background: url('../images/restaurant-logo_medium.png') no-repeat;
         width: 100px;
         height: 100px;
         margin: 5px 5px 5px 0;
       }
+
+      .jumbotron {
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+      }
 }
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   /* Header */
   .navbar-brand {
     padding-top: 10px;
@@ -157,6 +211,21 @@ body {
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-  /* End Header */
 
+  .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
 }

@@ -81,9 +81,10 @@ body {
     text-align: right;
     padding-right: 15px;
   }
-  
+
   .navbar-light .navbar-toggler {
     border: 1px solid #61122f;
+  
   }
 
   #navbarSupportedContent a { /* Collapsed nav menu text */
@@ -134,6 +135,27 @@ body {
   background-color: #000;
   color: #fff;
   opacity: .8;
+}
+
+div.row {
+  margin-bottom: 35px;
+}
+#hours, #addres {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
 }
 
   @media (min-width: 1200px) {
@@ -211,6 +233,7 @@ body {
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+
 
   .jumbotron {
     margin-top: 30px;

@@ -36,9 +36,6 @@ p.text-center {
     overflow: hidden;
 }
 
-h4 {
-    text-align: center;
-}
 
 @media (max-width: 575px) 
 {
